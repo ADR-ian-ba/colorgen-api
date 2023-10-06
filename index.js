@@ -333,7 +333,7 @@ app.post("/forgetpassword", async(req, res)=>{
             from: emailUser,
             to: email,
             subject: "Colorgen verify",
-            text: `change your password here http://localhost:3000/verifyforgetpassword?email=${email}&otp=${otp}`,
+            text: `change your password here https://colorgen.onrender.com//verifyforgetpassword?email=${email}&otp=${otp}`,
         };
         transporter.sendMail(mailOptions, (error, info) => {
         if (error) {
