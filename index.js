@@ -85,7 +85,7 @@ app.post("/register", async(req,res)=>{
                             from: emailUser,
                             to: email,
                             subject: "Colorgen verify",
-                            text: `please verify your email by clicking this link https://colorgen.onrender.com//verify?email=${email}&otp=${otp}`,
+                            text: `please verify your email by clicking this link https://colorgen.onrender.com/verify?email=${email}&otp=${otp}`,
                         };
                         transporter.sendMail(mailOptions, (error, info) => {
                         if (error) {
@@ -109,7 +109,7 @@ app.post("/register", async(req,res)=>{
                         from: emailUser,
                         to: email,
                         subject: "Colorgen verify",
-                        text: `please verify your email by clicking this link https://colorgen.onrender.com//verify?email=${email}&otp=${otp}`,
+                        text: `please verify your email by clicking this link https://colorgen.onrender.com/verify?email=${email}&otp=${otp}`,
                     };
                     transporter.sendMail(mailOptions, (error, info) => {
                     if (error) {
@@ -333,7 +333,7 @@ app.post("/forgetpassword", async(req, res)=>{
             from: emailUser,
             to: email,
             subject: "Colorgen verify",
-            text: `change your password here https://colorgen.onrender.com//verifyforgetpassword?email=${email}&otp=${otp}`,
+            text: `change your password here https://colorgen.onrender.com/verifyforgetpassword?email=${email}&otp=${otp}`,
         };
         transporter.sendMail(mailOptions, (error, info) => {
         if (error) {
